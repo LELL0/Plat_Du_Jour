@@ -1,0 +1,76 @@
+﻿@using PlatDuJour.DAL.Services
+@model List<UserViewModel>
+
+
+<div class="table-responsive">
+
+    <table class="table custom-table">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <label class="control control--checkbox">
+                        <input type="checkbox" class="js-check-all" />
+                        <div class="control__indicator"></div>
+                    </label>
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">User Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">
+                            <label class="control control--checkbox">
+                                <input type="checkbox" />
+                                <div class="control__indicator"></div>
+                            </label>
+                        </th>
+                        <td>
+                            @item.Name
+                        </td>
+                        <td> @item.UserName </td>
+                        <td>@item.EmailAddress</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>
+                            <ul class="persons">
+                                <li>
+                                    <a href="#">
+                                        <img src="~/Images/unknown.jpg" alt="Person" class="img-fluid">
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            @{
+                                if (item.IsActive)
+                                {
+                                    <a class="btn btn-danger" asp-action="Deactivate" asp-controller="users" asp-route-emailAddress="@item.EmailAddress">
+                                        Deactivate
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-success" asp-action="Activate" asp-controller="users" asp-route-emailAddress="@item.EmailAddress">
+                                        activate
+                                    </a>
+                                }
+                                <a class="btn btn-info text-white" asp-action="edit" asp-controller="users" asp-route-emailAddress="@item.EmailAddress">Edit</a>
+                            }
+
+                        </td>
+                    </tr>
+                }
+
+            }
+
+
+
+        </tbody>
+    </table>
+</div>

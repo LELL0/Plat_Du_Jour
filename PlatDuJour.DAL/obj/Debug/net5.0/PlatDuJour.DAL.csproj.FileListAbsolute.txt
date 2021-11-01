@@ -1,0 +1,30 @@
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.deps.json
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.runtimeconfig.json
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.runtimeconfig.dev.json
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.dll
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\bin\Debug\net5.0\ref\PlatDuJour.DAL.dll
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.pdb
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.csprojAssemblyReference.cache
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.AssemblyInfo.cs
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.dll
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\ref\PlatDuJour.DAL.dll
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.pdb
+C:\Users\User\source\repos\LearningIdentity\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.genruntimeconfig.cache
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.deps.json
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.runtimeconfig.json
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.runtimeconfig.dev.json
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.dll
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\bin\Debug\net5.0\ref\PlatDuJour.DAL.dll
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\bin\Debug\net5.0\PlatDuJour.DAL.pdb
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.csproj.AssemblyReference.cache
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.AssemblyInfoInputs.cache
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.AssemblyInfo.cs
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.dll
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\ref\PlatDuJour.DAL.dll
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.pdb
+C:\Users\Elia El Khoury\Desktop\Plat_Du_Jour-main\PlatDuJour.DAL\obj\Debug\net5.0\PlatDuJour.DAL.genruntimeconfig.cache
