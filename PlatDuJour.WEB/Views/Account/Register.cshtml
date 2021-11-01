@@ -1,0 +1,57 @@
+﻿@model RegisterVM
+
+<div class="container">
+    <div class="row">
+        <div class="offset-2">
+
+        </div>
+        <div class="col-md-8 shadow">
+            <form role="form" method="post" asp-action="register" asp-controller="Account">
+                <div class="row pl-3 pr-3">
+                    <div class="text-danger" asp-validation-summary="All"></div>
+                    <div class="col-12 form-group">
+                        <label asp-for="Name" class="col-md-2 control-label"></label>
+                        <div class="col-md-12">
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label asp-for="Email" class="col-md-2 control-label"></label>
+                        <div class="col-md-12">
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label asp-for="Password" class="col-md-2 control-label"></label>
+                        <div class="col-md-12">
+                            <input asp-for="Password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-12 form-group">
+                        <label asp-for="ConfirmPassword" class="col-md-4 control-label"></label>
+                        <div class="col-md-12">
+                            <input asp-for="ConfirmPassword" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h5 class="text-black-50">already have an account <a asp-action="Login" asp-controller="Account">Login</a> </h5>
+                    </div>
+                    <div class="col-12 form-group">
+                        <button type="submit" class="btn btn-primary text-white">SignUp</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="offset-2">
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{ 
+@{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "_AdminLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LearningIdentity</title>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;display=swap" rel="stylesheet">
+    <link href="~/lib/fonts/icomoon/style.css" rel="stylesheet" />
+    <link href="~/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/js/customtable/style.css" rel="stylesheet" />
+    <link href="~/lib/menu/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        @{ await Html.RenderPartialAsync("_Navbar");}
+
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted fixed-bottom">
+        <div class="container">
+            &copy; 2021 - LearningIdentity - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/lib/menu/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

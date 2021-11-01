@@ -1,0 +1,77 @@
+﻿@model LearningIdentity.ViewModels.LoginVM
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+@using Microsoft.AspNetCore.Identity;
+
+@inject SignInManager<IdentityUser> signInManager
+
+@{
+    var schemes = await signInManager.GetExternalAuthenticationSchemesAsync();
+    var loginProviders = schemes.ToList();
+}
+
+
+<div class="row">
+    <div class="offset-3">
+
+    </div>
+    <div class="col-md-6 shadow">
+        <form asp-action="Login" role="form" asp-controller="Account" method="post">
+            <div class="row p-4">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group col-12">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group col-12">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check col-12">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <h6 class="text-black-50"> already have an account? <a asp-controller="Account" asp-action="Register">Register</a></h6>
+                    <h6 class="text-black-50"> Forget <a asp-controller="Account" asp-action="ForgetPassowrd">Password</a> </h6>
+                </div>
+                <div class="form-group col-12">
+                    <input type="submit" value="Login" class="btn btn-primary" />
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-3">
+        @{
+            if (loginProviders.Count() > 0)
+            {
+                <div class="row">
+                    <h6 class="text-info">Use Other Services to login!</h6>
+                    <div class="col-12">
+                        <form asp-route-returnUrl="@ViewData["ReturnUrl"]" asp-action="ExternalLogin" asp-controller="Account" method="post" role="form">
+                            @foreach (var provider in loginProviders)
+                            {
+                                <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="login using @provider.Name account" data-toggle="tooltip">@provider.Name</button>
+                            }
+                        </form>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
